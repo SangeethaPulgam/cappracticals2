@@ -1,5 +1,12 @@
 using CatalogService as service from '../../srv/CatalogService';
 annotate service.POs with @(
+     UI.SelectionFields:[
+        PO_ID,
+        PARTNER_GUID.COMPANY_NAME,
+        GROSS_AMOUNT,
+        OVERALL_STATUS,
+        CURRENCY_code
+    ],
     UI.FieldGroup #GeneratedGroup : {
         $Type : 'UI.FieldGroupType',
         Data : [
